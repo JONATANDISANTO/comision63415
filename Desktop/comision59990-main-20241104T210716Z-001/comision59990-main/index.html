@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIDEPRA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-bar"> 
+                <li class='logo'><a href="index.html"><img src="./asset/LOGO SIDEPRA.jpg" alt="logo"></a></li>
+                <input type='checkbox' id='check' />
+                <span class="menu">
+                    <li><a href="#">INICIO</a></li>
+                    <li><a href="">NOVEDADES</a></li>
+                    <li><a href="">GREMIAL</a></li>
+                    <li><a href="">NOTICIAS</a></li>
+                    <li><a href="">PARITARIAS</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>        
+            </ul>
+        </nav>
+    </header>
+    <main class="grid">
+        
+        
+        <section class="h1-index">
+            <h1 class="titulo">SIDEPRA "Sindicato de empleados de pirulines de la Republica Argentina"</h1>
+            <p>SIDEPRA es la organización que agrupa y defiende a los empleados del sector de pirulines en la República Argentina, velando por sus derechos laborales y económicos. Nuestro sindicato trabaja para asegurar que cada miembro tenga voz en la lucha por condiciones laborales justas y salarios dignos.</p>        
+        </section>
+        <section class="botones-contacto">
+            <img src="./asset/DALL·E-2024-10-02-21.356.jpg" alt="portada index">
+                <a class="turno-whatsapp" href="" target="_blank">
+                    <button>MIRA NUESTROS <br> BENEFICIOS</button>
+                </a>
+                <a class="lista-de-prescios" href="" target="_blank" download="lista-de-precios.txt">
+                    <button>CALCULADORA <br> DE SUELDO</button>
+                </a>
+                <a class="lugar" href="https://www.google.com/maps/place/Cornelio+Saavedra+2051,+San+Mart%C3%ADn,+Provincia+de+Buenos+Aires/@-34.5734041,-58.5359389,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcb772e3eff6dd:0x64b946917a002017!8m2!3d-34.5734085!4d-58.533364!16s%2Fg%2F11g0zvffly?authuser=0&entry=ttu" target="_blank">
+                    <button>ENCONTRANOS</button>
+                </a>
+        </section>
+        <section>
+            <h2>Recibo de Sueldo - Periodo: Octubre/2024</h2>
+            <div id="cantidadEmpleadosSection">
+                <label for="cantidadEmpleados">¿Cuántos empleados deseas calcular?</label>
+                <input type="number" id="cantidadEmpleados" min="1" required>
+                <button id="iniciarCalculo">Iniciar Cálculo</button>
+            </div>
+        
+            <form id="formEmpleado" style="display: none;">
+                <label for="categoria">Categoría:</label>
+                <select id="categoria">
+                    <option value="vendedor">Vendedor</option>
+                    <option value="cocinero">Cocinero</option>
+                    <option value="administrativo">Administrativo</option>
+                    <option value="directivo">Directivo</option>
+                </select>
+                <label for="antiguedad">Antigüedad (años):</label>
+                <input type="number" id="antiguedad" min="0" max="40" required>
+                <label for="diasTrabajados">Días Trabajados:</label>
+                <input type="number" id="diasTrabajados" min="0" required>
+                <button type="button" id="calcularSueldo">Calcular Sueldo</button>
+            </form>
+        
+        
+        
+            
+            <div id="tablaRecibo"></div>
+
+        </section>
+        <section class="h2-index">
+            <h2 class="h2-inicio">QUIENES SOMOS</h2>
+            <P class="p1-inicio">"En el Sindicato de Empleados de Pirulines de la República Argentina (SIDEPRA), nuestro principal objetivo es cuidar el bolsillo de los trabajadores ante la creciente inflación del país, resguardando sus condiciones laborales y asegurando salarios justos. Nos dedicamos a defender los derechos de quienes forman parte de la industria del pirulín, garantizando su bienestar económico y laboral. A través de negociaciones colectivas y apoyo continuo, trabajamos para proteger el poder adquisitivo de nuestros afiliados y ofrecerles un respaldo sólido en su vida laboral.</p>
+            
+        <section class="h2-index2">
+                <h2 class="h2-segundo">LO QUE HACEMOS</h2>
+                <P class="p2-segundo">"En EL ARTE DEL PELO, nuestro objetivo es ofrecerte una experiencia única y personalizada en cada visita. Nos adaptamos a las últimas tendencias, dedicándonos a la innovación constante para asegurarnos de que el servicio se ajuste perfectamente a tus necesidades y deseos. cortes de cabello modernos hasta tratamientos capilares exclusivos, estamos comprometidos con que cada cliente se sienta renovado, satisfecho y completamente feliz con su nuevo estilo."</P>
+    </main>
+    <footer>
+        <div class="grid-footer" >
+            <section class="redes">
+                <h4 class="seguinos">Seguinos</h4>
+                <hr class="custom-1-hr">
+                <br>
+                <ul>
+                    <li><a href="/asset/footer/pngwing.com (1).png" target="_blank" ><img src="./asset/footer/pngwing.com (1).png" alt="logo whatsapp"></a></li>
+                    <li><a href="/asset/footer/pngwing.com (2).png" target="_blank"><img src="./asset/footer/pngwing.com (2).png" alt="logo youtube"></a></li>
+                    <li><a href="/asset/footer/pngwing.com (3).png" target="_blank" ><img src="./asset/footer/pngwing.com (3).png" alt="logo facebook"></a></li>
+                    <li><a href="/asset/footer/pngwing.com (5).png" target="_blank"><img src="./asset/footer/pngwing.com (5).png" alt="logo instagram"></a></li>
+                </ul>
+                <p class="copy">
+                    © 2024 Sindicato de Piruleros de la Republica Argentina. Todos los derechos <br> reservados. Diseño y desarrollo por [SIDEPRA].
+                </p>
+            </section>
+            <section class="contactos-footer">
+                <h4>Contacto</h4>
+                <hr class="custom-hr">
+                <p>Saavedra 2051, San Martin <br> Lunes a Viernes de 8hs a 20hs <br> Domingos de 9hs a 13hs <br> TEL:11-38782284</p>
+            </section>
+            <section class="formulario" >
+                <form action="/procesar-formulario" method="post">
+                
+                    <label for="nombre">Tu Nombre...</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                
+                    <label for="email">Tu Correo Electrónico</label>
+                    <input type="email" id="email" name="email" required>
+                
+                    <label for="comentario">Comentario</label>
+                    <textarea id="comentario" name="comentario" maxlength="120" required></textarea>
+                
+                    <button id="boton-enviar" type="submit">Enviar</button>
+                </form>
+            </section>
+        </div>
+    </footer>
+    <script src="./js/index.js"></script>
+</body>
+</html>
+
